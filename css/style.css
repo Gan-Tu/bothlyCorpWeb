@@ -3772,3 +3772,47 @@ only screen and (				min-resolution: 2dppx) {
 	text-align: left
 }
 */
+
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #ffffff no-repeat center center;
+}
+
+svg {
+  display:block;
+  width:258px;
+  height:258px;
+  position:fixed;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  z-index: 100;
+}
+
+.tree {
+  fill: #00D200;
+}
+
+.circle-mask {
+  transform-origin: 50% 90%;
+  animation: scale 4s infinite ease-out;
+}
+
+@keyframes scale {
+  0%, 100% {
+    transform: scale(0.0);
+  }
+  7%, 90% {
+    transform: scale(0.4);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
